@@ -9,17 +9,17 @@ file(GLOB SCRIBE_SOURCE
 )
 
 EXTERNALPROJECT_ADD(
-  fb303
-  GIT_REPOSITORY https://github.com/bowlofstew/thrift-fb303.git
-  GIT_TAG d413fee7d8e3a63a8016577f550ff3eda1edccdf
-  SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/fb303
+  thrift
+  GIT_REPOSITORY https://github.com/apache/thrift.git
+  GIT_TAG f0438b8872f08554243a77bf8f5ead1bba6332f1
+  SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/thrift
   CONFIGURE_COMMAND ""
   BUILD_COMMAND ""
   INSTALL_COMMAND ""
 )
 
-set(FB303_INCS ${CMAKE_SOURCE_DIR}/thirdparty/cthirdparty/fb303/cpp)
-
+set(FB303_INCS ${CMAKE_SOURCE_DIR}/thirdparty/fb303/cpp)
+message( STATUS "FB303_INCS:         " ${FB303_INCS} )
 include_directories(${FB303_INCS})
 
 # This was just hacked in; will move out after getting the build system in place.
