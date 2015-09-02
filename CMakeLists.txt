@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+project(scribe)
+include(ExternalProject)
+include_directories(cmake)
+add_subdirectory(src)
+set(CMAKE_VERBOSE_MAKEFILE ON)
