@@ -17,7 +17,7 @@ before_install:
   - cd thrift
   - git checkout 0.9.1
   - ./bootstrap.sh
-  - ./configure --with-ruby=no --with-go=no
+  - ./configure --with-ruby=no --with-go=no --with-java=no
   - make
   - sudo make install
   - cd /tmp/thrift/contrib/fb303
