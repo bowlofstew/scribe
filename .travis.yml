@@ -17,11 +17,12 @@ before_install:
   - cd thrift
   - git checkout 0.9.1
   - ./bootstrap.sh
-  - ./configure  --with-java=no --with-erlang=no --with-php=no --with-perl=no --with-php_extension=no --with-ruby=no --with-haskell=no --with-go=no
-  - make
+  - ./configure --prefix=/opt/thrift --with-java=no --with-erlang=no --with-php=no --with-perl=no --with-php_extension=no --with-ruby=no --with-haskell=no --with-go=no
   - sudo make install
   - cd /tmp/thrift/contrib/fb303
   - ./bootstrap.sh
+  - ./configure --prefix=/opt/fb303 --with-thriftpath=/opt/thrift
+  - sudo make install
   
 install:
   - ./configure CPPFLAGS="-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H -DBOOST_FILESYSTEM_VERSION=2" LIBS="-lboost_system -lboost_filesystem"
