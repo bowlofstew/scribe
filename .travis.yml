@@ -17,15 +17,15 @@ before_install:
   - cd thrift
   - git checkout 0.9.1
   - ./bootstrap.sh
-  - ./configure --prefix=/opt/thrift --with-java=no --with-erlang=no --with-php=no --with-perl=no --with-php_extension=no --with-ruby=no --with-haskell=no --with-go=no
+  - ./configure --with-java=no --with-erlang=no --with-php=no --with-perl=no --with-php_extension=no --with-ruby=no --with-haskell=no --with-go=no
   - sudo make install
   - cd /tmp/thrift/contrib/fb303
   - ./bootstrap.sh
-  - ./configure --prefix=/opt/fb303 --with-thriftpath=/opt/thrift
+  - ./configure CPPFLAGS="-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H"
   - sudo make install
   
 install:
   - ./bootstrap.sh
-  - ./configure --prefix=/opt/scribe --with-thriftpath=/opt/thrift --with-fb303path=/opt/fb303
+  - ./configure
   - make
   - sudo make install
