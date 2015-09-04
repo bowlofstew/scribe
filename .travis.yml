@@ -25,6 +25,7 @@ before_install:
   - sudo make install
   
 install:
-  - ./configure CPPFLAGS="-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H -DBOOST_FILESYSTEM_VERSION=2" LIBS="-lboost_system -lboost_filesystem"
+  - ./bootstrap.sh
+  - ./configure --prefix=/opt/scribe --with-thriftpath=/opt/thrift --with-fb303path=/opt/fb303
   - make
   - sudo make install
