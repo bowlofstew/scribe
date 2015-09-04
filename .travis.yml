@@ -22,7 +22,7 @@ before_install:
   - sudo make install
   - cd /tmp/thrift/contrib/fb303
   - ./bootstrap.sh
-  - ./configure CPPFLAGS="-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H"
+  - ./configure --with-java=no CPPFLAGS="-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H"
   - make
   - sudo make install
 
