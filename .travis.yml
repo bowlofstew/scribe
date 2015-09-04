@@ -22,10 +22,7 @@ before_install:
   - sudo make install
   - cd /tmp/thrift/contrib/fb303
   - ./bootstrap.sh
-  - ./configure --disable-opt
-  - make
-  - sudo make install
-
+  
 install:
   - ./configure CPPFLAGS="-DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H -DBOOST_FILESYSTEM_VERSION=2" LIBS="-lboost_system -lboost_filesystem"
   - make
