@@ -8,19 +8,51 @@ file(GLOB SCRIBE_SOURCE
     "${SRC_ROOT}/*.cpp"
 )
 
+find_package(Boost REQUIRED COMPONENTS
+        filesystem
+        date_time
+        system
+        program_options
+        thread
+        regex
+        )
+
+EXTERNALPROJECT_ADD(
+  scribe_tools
+  GIT_REPOSITORY https://github.com/bowlofstew/scribe_tools.git
+  GIT_TAG 89125f387a04ed79757030f66f6461c50c9ece13
+  SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/scribe_tools
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND make
+  INSTALL_COMMAND ""
+  BUILD_IN_SOURCE 1
+)
+
 EXTERNALPROJECT_ADD(
   thrift
   GIT_REPOSITORY https://github.com/apache/thrift.git
-  GIT_TAG f0438b8872f08554243a77bf8f5ead1bba6332f1
+  GIT_TAG 9549b25c77587b29be4e0b5c258221a4ed85d37a
   SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/thrift
-  CONFIGURE_COMMAND ""
-  BUILD_COMMAND ""
-  INSTALL_COMMAND ""
+  UPDATE_COMMAND ./bootstrap.sh
+  CONFIGURE_COMMAND ./configure --prefix=${CMAKE_BINARY_DIR}
+  BUILD_COMMAND make
+  INSTALL_COMMAND make install
+  BUILD_IN_SOURCE 1
+  LOG_UPDATE ON
+  LOG_CONFIGURE ON
+  LOG_BUILD ON
+  LOG_INSTALL ON
 )
 
-set(FB303_INCS ${CMAKE_SOURCE_DIR}/thirdparty/fb303/cpp)
-message( STATUS "FB303_INCS:         " ${FB303_INCS} )
-include_directories(${FB303_INCS})
+set(THRIFT_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/thrift)
+set(303_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/thrift/contrib/fb303)
+set(SCRIBE_TOOLS_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/scribe_tools)
+
+include_directories(
+        ${THRIFT_ROOT}/lib/cpp/src
+        ${303_ROOT}/cpp
+        ${SCRIBE_TOOLS_ROOT}/gen-cpp
+)
 
 # This was just hacked in; will move out after getting the build system in place.
 include(CheckCXXCompilerFlag)

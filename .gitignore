@@ -11,3 +11,6 @@ mkinstalldirs
 *.o
 .idea
 build
+autom4te.cache
+aclocal.m4
+configure
