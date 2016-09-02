@@ -10,5 +10,8 @@ missing
 mkinstalldirs
 *.o
 
+# Clion
+.idea/
+
 # Bazel
 bazel-*

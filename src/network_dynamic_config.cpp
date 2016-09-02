@@ -17,8 +17,8 @@
 //
 // @author John Song
 
-#include "network_dynamic_config.h"
-#include "dynamic_bucket_updater.h"
+#include "../inc/network_dynamic_config.h"
+#include "../inc/dynamic_bucket_updater.h"
 
 static NetworkDynamicConfigMod netConfigMods[] = {
   {

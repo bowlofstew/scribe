@@ -19,9 +19,9 @@
 // @author Jason Sobel
 // @author Avinash Lakshman
 
-#include "common.h"
-#include "file.h"
-#include "HdfsFile.h"
+#include "../inc/common.h"
+#include "../inc/file.h"
+#include "../inc/HdfsFile.h"
 
 #define INITIAL_BUFFER_SIZE (64 * 1024)
 #define LARGE_BUFFER_SIZE (16 * INITIAL_BUFFER_SIZE) /* arbitrarily chosen */

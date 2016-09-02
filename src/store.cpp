@@ -25,10 +25,10 @@
 // @author John Song
 
 #include <algorithm>
-#include "common.h"
-#include "scribe_server.h"
-#include "network_dynamic_config.h"
-#include "modp_b64.h"
+#include "../inc/common.h"
+#include "../inc/scribe_server.h"
+#include "../inc/network_dynamic_config.h"
+#include "../inc/modp_b64.h"
 
 using namespace std;
 using namespace boost;

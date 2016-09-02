@@ -21,8 +21,8 @@
 // @author Avinash Lakshman
 // @author Anthony Giardullo
 
-#include "common.h"
-#include "scribe_server.h"
+#include "../inc/common.h"
+#include "../inc/scribe_server.h"
 #include <signal.h>
 
 using namespace apache::thrift::concurrency;

@@ -42,7 +42,7 @@
  */
 
 /* public header */
-#include "modp_b64.h"
+#include "../inc/modp_b64.h"
 
 /*
  * If you are ripping this out of the library, comment out the next
@@ -56,7 +56,7 @@
 /* else for Intel, Amd; uncomment this */
 /* #undef WORDS_BIGENDIAN */
 
-#include "modp_b64_data.h"
+#include "../inc/modp_b64_data.h"
 
 #define BADCHAR 0x01FFFFFF
 
