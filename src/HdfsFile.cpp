@@ -6,9 +6,10 @@
 //
 
 #include <limits>
-#include "common.h"
-#include "file.h"
-#include "HdfsFile.h"
+
+#include "inc/common.h"
+#include "inc/file.h"
+#include "inc/HdfsFile.h"
 
 using namespace std;
 

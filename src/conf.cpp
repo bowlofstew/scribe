@@ -20,9 +20,10 @@
 // @author John Song
 
 #include <boost/algorithm/string.hpp>
-#include "../inc/common.h"
-#include "../inc/conf.h"
-#include "../inc/scribe_server.h"
+
+#include "inc/common.h"
+#include "inc/conf.h"
+#include "inc/scribe_server.h"
 
 using namespace boost;
 using namespace std;
