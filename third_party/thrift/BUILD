@@ -5,7 +5,7 @@ package(default_visibility = ["//visibility:public"])
 cc_library(
   name = "thrift_headers",
   includes = [
-    "upstream/lib/cpp/src/thrift/protocol"
+    "upstream/lib/cpp/src"
   ],
   hdrs = glob([
       "upstream/lib/cpp/src/thrift/protocol/*.h",
