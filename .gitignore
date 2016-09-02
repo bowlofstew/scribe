@@ -9,3 +9,6 @@ install-sh
 missing
 mkinstalldirs
 *.o
+
+# Bazel
+bazel-*
