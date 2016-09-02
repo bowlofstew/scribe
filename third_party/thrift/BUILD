@@ -5,7 +5,8 @@ package(default_visibility = ["//visibility:public"])
 cc_library(
   name = "thrift_headers",
   includes = [
-    "upstream/lib/cpp/src"
+    "upstream/lib/cpp/src",
+    "osx"
   ],
   hdrs = glob([
       "upstream/lib/cpp/src/thrift/protocol/*.h",
@@ -16,6 +17,10 @@ cc_library(
       "upstream/lib/cpp/src/thrift/transport/*.h",
   ]),
   srcs = [
+    "osx/thrift/config.h"
+  ],
+  deps = [
+    "//third_party/libevent:libevent"
   ],
   visibility = ["//visibility:public"]
 )
