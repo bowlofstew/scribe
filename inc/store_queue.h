@@ -21,6 +21,7 @@
 // @author Anthony Giardullo
 // @author John Song
 
+#pragma once
 #ifndef SCRIBE_STORE_QUEUE_H
 #define SCRIBE_STORE_QUEUE_H
 

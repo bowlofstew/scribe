@@ -17,7 +17,7 @@
 //
 // @author Bobby Johnson
 // @author Jason Sobel
-
+#pragma once
 #ifndef SCRIBE_COMMON_H
 #define SCRIBE_COMMON_H
 
@@ -42,6 +42,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+
 #include <boost/shared_ptr.hpp>
 #include <boost/filesystem/operations.hpp>
 #include <boost/filesystem/convenience.hpp>

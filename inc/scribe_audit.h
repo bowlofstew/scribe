@@ -17,6 +17,7 @@
 //
 // @author Satish Mittal
 
+#pragma once
 #ifndef SCRIBE_AUDIT_H
 #define SCRIBE_AUDIT_H
 

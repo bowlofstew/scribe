@@ -24,6 +24,7 @@
 // @author Jan Oravec
 // @author John Song
 
+#pragma once
 #ifndef SCRIBE_STORE_H
 #define SCRIBE_STORE_H
 

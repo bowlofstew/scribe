@@ -19,6 +19,7 @@
 // @author James Wang
 // @author Jason Sobel
 
+#pragma once
 #ifndef SCRIBE_CONN_POOL_H
 #define SCRIBE_CONN_POOL_H
 

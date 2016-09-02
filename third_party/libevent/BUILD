@@ -1,4 +1,6 @@
+# Copyright 2016. Stewart Henderson
 licenses(["notice"])
+
 cc_library(
   visibility = ["//visibility:public"],
   includes = [

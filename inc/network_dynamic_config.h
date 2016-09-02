@@ -17,6 +17,7 @@
 //
 // @author John Song
 
+#pragma once
 #ifndef SCRIBE_NETWORK_UPDATER_H
 #define SCRIBE_NETWORK_UPDATER_H
 

@@ -18,6 +18,7 @@
 // @author Bobby Johnson
 // @author Jason Sobel
 
+#pragma once
 #ifndef SCRIBE_CONF_H
 #define SCRIBE_CONF_H
 

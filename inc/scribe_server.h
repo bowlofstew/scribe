@@ -21,6 +21,7 @@
 // @author Avinash Lakshman
 // @author Anthony Giardullo
 
+#pragma once
 #ifndef SCRIBE_SERVER_H
 #define SCRIBE_SERVER_H
 

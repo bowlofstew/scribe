@@ -17,6 +17,7 @@
 //
 // @author Bobby Johnson
 
+#pragma once
 #ifndef SCRIBE_ENV
 #define SCRIBE_ENV
 

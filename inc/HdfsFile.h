@@ -4,6 +4,8 @@
 // See accompanying file LICENSE or visit the Scribe site at:
 // http://developers.facebook.com/scribe/
 //
+
+#pragma once
 #ifndef HDFS_FILE_H
 #define HDFS_FILE_H
 

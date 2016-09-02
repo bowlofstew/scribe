@@ -19,6 +19,7 @@
 // @author Avinash Lakshman
 // @author Jason Sobel
 
+#pragma once
 #ifndef SCRIBE_FILE_H
 #define SCRIBE_FILE_H
 

@@ -17,6 +17,7 @@
 //
 // @author John Song
 
+#pragma once
 #ifndef SCRIBE_DYNAMIC_BUCKET_UPDATER_H
 #define SCRIBE_DYNAMIC_BUCKET_UPDATER_H
 
