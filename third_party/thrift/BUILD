@@ -6,9 +6,9 @@ cc_library(
   name = "thrift_headers",
   includes = [
     "upstream/lib/cpp/src",
-    "osx"
   ],
   hdrs = glob([
+      "upstream/lib/cpp/src/*.h",
       "upstream/lib/cpp/src/thrift/protocol/*.h",
       "upstream/lib/cpp/src/thrift/server/*.h",
       "upstream/lib/cpp/src/thrift/concurrency/*.h",

@@ -4,13 +4,16 @@ cc_binary(
     name = "scribe",
     srcs = glob([
     	"src/*.cpp",
+        "inc/*.h"
  #   	"src/*.c"
     ]),
     deps = [
         "@boost//:filesystem",
-        "//third_party/thrift:thrift_headers"
+        "@boost//:algorithm",
+        "@boost//:assert",
+        "//third_party/thrift:thrift_headers",
     ],
-    includes = [
-    	"inc",
+    copts = [
+        "-Wno-deprecated"   
     ]
 )

@@ -1,7 +1,8 @@
 #include <strstream>
 #include <iostream>
-#include "../inc/dynamic_bucket_updater.h"
-#include "../inc/scribe_server.h"
+
+#include "inc/dynamic_bucket_updater.h"
+#include "inc/scribe_server.h"
 
 using namespace std;
 using namespace apache::thrift::concurrency;

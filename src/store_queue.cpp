@@ -21,8 +21,8 @@
 // @author Anthony Giardullo
 // @author John Song
 
-#include "../inc/common.h"
-#include "../inc/scribe_server.h"
+#include "inc/common.h"
+#include "inc/scribe_server.h"
 
 using namespace std;
 using namespace boost;

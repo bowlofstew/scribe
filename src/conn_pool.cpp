@@ -21,9 +21,9 @@
 // @author Avinash Lakshman
 
 
-#include "../inc/common.h"
-#include "../inc/scribe_server.h"
-#include "../inc/conn_pool.h"
+#include "inc/common.h"
+#include "inc/scribe_server.h"
+#include "inc/conn_pool.h"
 
 using std::string;
 using std::ostringstream;

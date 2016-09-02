@@ -6,9 +6,9 @@
 //
 
 #include <limits>
-#include "../inc/common.h"
-#include "../inc/file.h"
-#include "../inc/HdfsFile.h"
+#include "common.h"
+#include "file.h"
+#include "HdfsFile.h"
 
 using namespace std;
 
