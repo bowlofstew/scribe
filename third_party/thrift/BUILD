@@ -17,7 +17,7 @@ cc_library(
       "upstream/lib/cpp/src/thrift/transport/*.h",
   ]),
   srcs = [
-    "osx/thrift/config.h"
+    "linux-k8/thrift/config.h"
   ],
   deps = [
     "//third_party/libevent:libevent"
